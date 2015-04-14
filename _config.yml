@@ -1,0 +1,13 @@
+# Site settings
+title: "The Lion &amp; the Lambda"
+email: "sclarkdev@gmail.com"
+description: > # this means to ignore newlines until "baseurl:"
+  A blog about faith and programming.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://saclark.gihub.io" # the base hostname & protocol for your site
+twitter_username: "saclark11"
+github_username:  "sackarl"
+permalink: :title/
+
+# Build settings
+markdown: "kramdown"

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+
+    {% include header.html %}
+
+    <main role="main">
+      {{ content }}
+    </main>
+
+    {% include footer.html %}
+
+    <!-- <script type="application/javascript">
+        (function(){
+            var menu = document.getElementById('menu');
+            var main = document.getElementsByTagName('main')[0];
+            menu.onclick = function() {
+                if (menu.className === 'collapsed') {
+                    menu.className = 'expanded';
+                } else {
+                    menu.className = 'collapsed';
+                }
+            };
+            main.onclick = function() {
+                menu.className = 'collapsed';
+            };
+        })();
+    </script> -->
+  </body>
+</html>

@@ -1,0 +1,22 @@
+@import "syntax-highlighting-solarized-light";
+
+/*
+  Inline code blocks
+*/
+pre,
+code {
+    background-color: $grey-color-light;
+}
+
+/*
+  Block-level code blocks
+*/
+.highlight pre {
+    padding: $spacing-unit 0;
+}
+.highlight pre,
+.highlight code {
+    background-color: $background-color;
+    color: inherit;
+    border: none;
+}
