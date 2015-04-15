@@ -60,6 +60,7 @@ hr {
 time {
     color: $grey-color;
     font-size: $small-font-size;
+    line-height: $base-line-height;
 }
 
 header {
@@ -161,17 +162,31 @@ header {
     list-style: none;
     margin-left: 0;
 
-    li time {
-        padding-right: $base-font-size;
+    li {
+        @extend %clearfix;
+
+        margin-bottom: .5em;
+
+        time {
+            display: block;
+            float: left;
+            width: 15%;
+        }
+
+        span {
+            display: block;
+            float: left;
+            width: 85%;
+        }
     }
 
-    a {
+    /*a {
         color: $text-color;
 
         &:visited {
             color: $grey-color;
         }
-    }
+    }*/
 }
 
 
@@ -186,5 +201,19 @@ article header {
 article {
     h1, h2, h3, h4, h5, h6 {
         margin-top: $spacing-unit;
+    }
+}
+
+
+/* small mobile */
+@media only screen and (max-width: $content-width) {
+    .archive-list {
+        li {
+            margin-bottom: 1em;
+
+            a, time {
+                width: 100%;
+            }
+        }
     }
 }
