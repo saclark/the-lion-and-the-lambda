@@ -1,5 +1,6 @@
 .DS_Store
-
+.bundle
+_vendor
 _site
 _drafts
 _tmp
